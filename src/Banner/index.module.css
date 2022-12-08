@@ -48,7 +48,6 @@
 }
 .carouse .pic4 {
   background: rgba(150, 100, 200);
-
   transform: rotateY(135deg) translateZ(288px);
 }
 .carouse .pic5 {
