@@ -1,13 +1,9 @@
-import React from "react";
-import "./App.css";
-import Banner from "./Banner";
+import Icon from "./Icon";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <Banner></Banner>
-      </header>
+    <div>
+      <Icon name="wechat" />
     </div>
   );
 }
