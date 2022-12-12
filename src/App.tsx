@@ -1,13 +1,9 @@
-import Icon from "./Icon";
+import { useRoutes } from "react-router-dom";
+import router from "./router";
 
 function App() {
-  return (
-    <div>
-      <Icon name="wechat" onClick={() => console.log("hi")} className="q" />
-      <Icon name="alipay" />
-      <Icon name="qq" />
-    </div>
-  );
+  const element = useRoutes(router);
+  return <>{element}</>;
 }
 
 export default App;

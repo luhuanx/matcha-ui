@@ -1,6 +1,6 @@
 import React from "react";
 import classes from "../helpers/classses";
-import styles from "./index.module.scss";
+import "./index.scss";
 interface IconProps extends React.ImgHTMLAttributes<HTMLImageElement> {
   name: string;
 }
@@ -13,9 +13,9 @@ const Icon: React.FunctionComponent<IconProps> = ({
   return (
     <>
       <img
-        className={classes(styles.muiIcon, className)}
+        className={classes("mui-icon", className)}
         src={`${process.env.PUBLIC_URL}/icons/${name}.svg`}
-        alt=""
+        alt={name}
         {...restProps}
       />
     </>
