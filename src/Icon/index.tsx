@@ -1,7 +1,5 @@
 import React from "react";
-import wechat from "../icons/wechat.svg";
-import alipay from "../icons/alipay.svg";
-import qq from "../icons/qq.svg";
+import styles from "./index.module.scss";
 
 interface IconProps {
   name: string;
@@ -10,9 +8,11 @@ interface IconProps {
 const Icon: React.FunctionComponent<IconProps> = ({ name }) => {
   return (
     <>
-      {name === "wechat" && <img src={wechat} alt="wechat" />}
-      {name === "alipay" && <img src={alipay} alt="alipay" />}
-      {name === "qq" && <img src={qq} alt="qq" />}
+      <img
+        className={styles.muiIcon}
+        src={`${process.env.PUBLIC_URL}/icons/${name}.svg`}
+        alt=""
+      />
     </>
   );
 };
