@@ -5,14 +5,18 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter } from "react-router-dom";
 import Navbar from "./Navbar";
+import Footer from "./Footer";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement,
 );
 root.render(
   <BrowserRouter>
-    <Navbar />
-    <App />
+    <div className="page-container">
+      <Navbar />
+      <App />
+      <Footer />
+    </div>
   </BrowserRouter>,
 );
 
