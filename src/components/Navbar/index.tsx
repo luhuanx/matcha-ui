@@ -4,11 +4,11 @@ import styles from "./index.module.scss";
 const Navbar = () => {
   return (
     <div className={styles.nav}>
-      <Link to="/">
+      <Link to="/home">
         <div className={styles.logo}>
           <img
             className={styles.logoImg}
-            src={`${process.env.PUBLIC_URL}/logo.png`}
+            src={`${process.env.PUBLIC_URL}/leaf.svg`}
             alt="logo"
           />
           <span>matcha-ui</span>
@@ -24,6 +24,9 @@ const Navbar = () => {
         </Link>
         <Link className={styles.item} to="/component">
           组件列表
+        </Link>
+        <Link className={styles.item} to="/style">
+          主题颜色
         </Link>
         <a
           target="_blank"

@@ -1,9 +1,13 @@
-import Home from "../Home";
-import Icon from "../Icon";
+import Home from "../pages/Home";
+import Icon from "../pages/Icon";
 
 const route = [
   {
     path: "/",
+    element: <Home />,
+  },
+  {
+    path: "/home",
     element: <Home />,
   },
   {
