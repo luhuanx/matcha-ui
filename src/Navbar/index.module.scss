@@ -1,0 +1,44 @@
+.nav {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  height: 64px;
+  justify-content: space-between;
+  box-shadow: 0 2px 8px rgb(0 0 0 / 15%);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  margin-left: 100px;
+
+  span {
+    margin-left: 12px;
+    font-size: 18px;
+    font-weight: 600;
+  }
+}
+
+.logoImg {
+  width: 32px;
+  height: 32px;
+}
+
+.tab {
+  margin-right: 100px;
+  display: flex;
+  align-items: center;
+}
+
+.item {
+  padding: 0 20px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.github {
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+}

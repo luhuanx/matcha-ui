@@ -1,50 +1,44 @@
-import { HashRouter as Router, Route, Link } from "react-router-dom";
-
-type Nav = {
-  key: string;
-  label: string;
-  children?: Nav[];
-};
-
-const tabs: Nav[] = [
-  {
-    label: "首页",
-    key: "home",
-  },
-  {
-    label: "市场",
-    key: "product",
-  },
-  {
-    label: "专辑",
-    key: "album",
-  },
-  {
-    label: "部落",
-    key: "tribe",
-  },
-  {
-    label: "艺术家",
-    key: "artist",
-  },
-  {
-    label: "关于我们",
-    key: "aboutUs",
-  },
-  {
-    label: "下载APP",
-    key: "downloadApp",
-  },
-];
+import { Link } from "react-router-dom";
+import styles from "./index.module.scss";
 
 const Navbar = () => {
   return (
-    <>
-      <Link to="/">首页</Link>
-      <Link to="/introduce">说明</Link>
-      <Link to="/start">开始</Link>
-      <Link to="/component">组件</Link>
-    </>
+    <div className={styles.nav}>
+      <Link to="/">
+        <div className={styles.logo}>
+          <img
+            className={styles.logoImg}
+            src={`${process.env.PUBLIC_URL}/logo.png`}
+            alt="logo"
+          />
+          <span>matcha-ui</span>
+        </div>
+      </Link>
+
+      <div className={styles.tab}>
+        <Link className={styles.item} to="/introduce">
+          官方文档
+        </Link>
+        <Link className={styles.item} to="/start">
+          快速上手
+        </Link>
+        <Link className={styles.item} to="/component">
+          组件列表
+        </Link>
+        <a
+          target="_blank"
+          href="https://github.com/luhuanx/matcha-ui"
+          className={styles.item}
+          rel="noreferrer"
+        >
+          <img
+            className={styles.github}
+            src={`${process.env.PUBLIC_URL}/icons/github.svg`}
+            alt=""
+          />
+        </a>
+      </div>
+    </div>
   );
 };
 
