@@ -1,5 +1,6 @@
 import Home from "../pages/Home";
 import Icon from "../pages/Icon";
+import WaterFall from "../pages/WaterFall";
 
 const route = [
   {
@@ -12,15 +13,15 @@ const route = [
   },
   {
     path: "/introduce",
-    element: <Icon name="qq" />,
+    element: <WaterFall />,
   },
   {
     path: "/start",
-    element: <Icon name="qq" />,
+    element: <Icon name="wechat" />,
   },
   {
     path: "/component",
-    element: <Icon name="qq" />,
+    element: <Icon name="alipay" />,
   },
 ];
 

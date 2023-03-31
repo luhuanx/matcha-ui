@@ -1,7 +1,7 @@
 .banner {
   position: relative;
   width: 100%;
-  height: 300px;
+  height: 320px;
   overflow: hidden;
 }
 
@@ -9,7 +9,7 @@
   position: absolute;
   left: -25%;
   width: 150%;
-  height: 300px;
+  height: 320px;
   background-color: rgb(151, 222, 206);
   border-bottom-left-radius: 100%;
   border-bottom-right-radius: 100%;
@@ -58,7 +58,7 @@
 .main {
   display: flex;
   justify-content: center;
-  margin-top: 60px;
+  margin-top: 80px;
 
   img {
     width: 72px;
